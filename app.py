@@ -8,7 +8,7 @@ from deepgram import DeepgramClientOptions, DeepgramClient, LiveOptions, LiveTra
 config = DeepgramClientOptions(
     options={"keepalive": "true"}
 )
-deepgram = DeepgramClient('c84649c6d6fd2bd26faac4eca6438733942a4bb3', config)
+deepgram = DeepgramClient('api key', config)
 dg_connection = deepgram.listen.websocket.v("1")
 
 # Initialize session state

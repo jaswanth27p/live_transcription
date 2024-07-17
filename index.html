@@ -6,7 +6,7 @@
     <script>
       navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
         const mediaRecorder = new MediaRecorder(stream)
-        const socket = new WebSocket('wss://api.deepgram.com/v1/listen', [ 'token', 'c84649c6d6fd2bd26faac4eca6438733942a4bb3' ])
+        const socket = new WebSocket('wss://api.deepgram.com/v1/listen', [ 'token', 'api key' ])
 
         socket.onopen = () => {
           console.log({ event: 'onopen' })
